@@ -39,3 +39,15 @@ Proje'yi başlatmak için aşağıdaki adımları izleyin.
    ```bash
     php artisan serve --port=9000
     ```
+
+
+7. İzinler
+
+    İzinler ile ilgili problemler mevcut olursa storage/framework/ klasörü içerisine sessions ve views klasörleri oluşturulmalı. View path ile iligli bir sorun olması durumunda config->view.php dosyasında compiled alanında realpath fonksiyonu kaldırılmalı.
+   Ekstra sorunlar için
+
+   ```bash
+    php artisan config:clear
+    php artisan route:clear
+    php artisan view:clear
+    ```
